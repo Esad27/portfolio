@@ -1,0 +1,182 @@
+* {
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: white !important;
+  
+}
+
+.navbar {
+  height: 75px;
+  background-color: #21272f !important;
+}
+
+.logo {
+  max-height: 50px !important;
+}
+
+#navflex {
+  width: 100% !important;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.main {
+  display: flex;
+  padding-top: 150px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  height: 866px;
+  background-color: #21272f;
+}
+
+.yazi {
+  padding: 80px;
+  font-size: 25px;
+}
+
+.buton {
+  box-shadow: 0px 20px 70px -14px rgba(0, 189, 149, 0.7) !important;
+}
+
+.skillp {
+  display: flex;
+  height: 64px !important;
+  width: 300px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3px;
+}
+
+.skills {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.1) !important;
+  justify-content: flex-start !important;
+  border-radius: 100px !important;
+  align-items: center !important;
+  position: relative !important;
+  padding: 0 5px !important;
+  display: flex !important;
+  height: 25px !important;
+  width: 100% !important;
+}
+
+.sa {
+  width: 33%;
+}
+
+.progress-value {
+  --scaleEnd: 100%;
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 15px;
+  width: 0;
+}
+
+#a100 {
+  --scaleEnd: 100% !important;
+}
+
+#a75 {
+  --scaleEnd: 75% !important;
+}
+
+#a65 {
+  --scaleEnd: 65% !important;
+}
+
+#a55 {
+  --scaleEnd: 55% !important;
+}
+
+#a85 {
+  --scaleEnd: 85% !important;
+}
+
+#a35 {
+  --scaleEnd: 35% !important;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--scaleEnd);
+  }
+}
+
+.esad {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.con {
+  margin-left: 10px;
+  height: 60px;
+}
+
+.aa {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    display: flex;
+    padding-top: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .yazi {
+    padding: 0px;
+    font-size: 25px;
+  }
+  .wid {
+    width: 80% !important;
+  }
+}
+
+.topv2{
+    height: 275px;
+}
+.myservice {
+  width: 100%;
+  background-color: rgb(23, 28, 35);
+  padding: 112px;
+}
+.myjobs {
+  height: 400px;
+  width: 400px;
+  background-color: #21272f;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.jobs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent !important;
+}
+.footer{
+  background-color: #21272f !important;
+}

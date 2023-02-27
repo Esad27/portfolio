@@ -1,0 +1,32 @@
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="gitjava.js"></script>
+    <script type="module">
+      import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+      const octokit = new Octokit({
+        auth: "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",
+      });
+      getall();
+      async function getall() {
+        var esad = await octokit.request("GET /users/{username}/repos", {
+          username: "esad27",
+        });
+        console.log(esad);
+      }
+    </script>
